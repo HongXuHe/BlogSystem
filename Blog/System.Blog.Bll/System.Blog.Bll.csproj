@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\System.Blog.IBLL\System.Blog.IBLL.csproj" />
+    <ProjectReference Include="..\System.Blog.IDAL\System.Blog.IDAL.csproj" />
+  </ItemGroup>
+
+</Project>
