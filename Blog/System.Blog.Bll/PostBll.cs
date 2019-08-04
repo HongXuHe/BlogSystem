@@ -3,7 +3,9 @@ using System.Blog.Entities;
 using System.Blog.IBLL;
 using System.Blog.IDAL;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace System.Blog.Bll
 {
@@ -15,6 +17,12 @@ namespace System.Blog.Bll
         {
             _postDal = postDal;
             _context = context;
+        }
+
+        public async Task<IEnumerable<CategoryEntity>> GetCategoryList()
+        {
+           return await _postDal.GetCategoryList();
+           
         }
     }
 }
